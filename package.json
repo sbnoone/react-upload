@@ -1,0 +1,16 @@
+{
+	"name": "react-upload",
+	"version": "1.0.0",
+	"scripts": {
+		"install:back": "cd backend && npm i",
+		"install:front": "cd frontend && npm i",
+		"dev:back": "cd backend && npm run dev",
+		"dev:front": "cd frontend && npm run dev",
+		"install": "concurrently \"npm run install:back\" \"npm run install:front\"",
+		"dev": "concurrently \"npm run dev:back\" \"npm run dev:front\""
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"engineStrict": true
+}

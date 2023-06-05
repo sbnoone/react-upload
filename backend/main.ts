@@ -28,6 +28,14 @@ const start = async () => {
 	await app.register(multipart)
 
 	app.route({
+		url: '/',
+		method: 'GET',
+		handler: (req, res) => {
+			res.send('OK')
+		},
+	})
+
+	app.route({
 		url: '/upload',
 		method: 'POST',
 		handler: async (req, res) => {
